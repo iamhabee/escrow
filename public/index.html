@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-kit-theme="default">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Escrow | Coins Buyers Meet Sellers</title>
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon/favicon-16x16.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://fonts.googleapis.com/css?family=Mukta:400,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/resources/fonts/font-icomoon/style.css">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/resources/fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/resources/fonts/font-linearicons/style.css">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/resources/fonts/font-feathericons/dist/feather.css">
+  <link rel="stylesheet" href="./home.css">
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  <style>
+    .initial__loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDFweCIgIGhlaWdodD0iNDFweCIgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIiBjbGFzcz0ibGRzLXJvbGxpbmciPiAgICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiBmaWxsPSJub25lIiBuZy1hdHRyLXN0cm9rZT0ie3tjb25maWcuY29sb3J9fSIgbmctYXR0ci1zdHJva2Utd2lkdGg9Int7Y29uZmlnLndpZHRofX0iIG5nLWF0dHItcj0ie3tjb25maWcucmFkaXVzfX0iIG5nLWF0dHItc3Ryb2tlLWRhc2hhcnJheT0ie3tjb25maWcuZGFzaGFycmF5fX0iIHN0cm9rZT0iIzAxOTBmZSIgc3Ryb2tlLXdpZHRoPSIxMCIgcj0iMzUiIHN0cm9rZS1kYXNoYXJyYXk9IjE2NC45MzM2MTQzMTM0NjQxNSA1Ni45Nzc4NzE0Mzc4MjEzOCIgdHJhbnNmb3JtPSJyb3RhdGUoODQgNTAgNTApIj4gICAgICA8YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InJvdGF0ZSIgY2FsY01vZGU9ImxpbmVhciIgdmFsdWVzPSIwIDUwIDUwOzM2MCA1MCA1MCIga2V5VGltZXM9IjA7MSIgZHVyPSIxcyIgYmVnaW49IjBzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSI+PC9hbmltYXRlVHJhbnNmb3JtPiAgICA8L2NpcmNsZT4gIDwvc3ZnPg==);
+      background-color: transparent;
+    }
+    body {
+      margin: 0;
+      background-color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar{
+        background:rgb(0, 110, 255);
+    }
+    .home-top{
+        width: 100%;
+        height: 100vh;
+        background: url('./resources/images/home/bg1.jpg');
+        background-size: 100% 100%;
+    }
+    #navbar {
+      width: 100%;
+      position: fixed;
+      top: -100px;
+      display: block;
+      transition: top 0.3s;
+    
+    }
+
+    .btn-download{
+      width: 300px;
+      height: 50px;
+      font-size: larger;
+      border-radius: 10px;
+      background: none;
+      color: rgb(0, 195, 255);
+      border: 2px solid rgb(0, 195, 255);
+    }
+    .btn-download:hover{
+      color: white;
+      background: rgb(0, 195, 255);
+      transition: 0.3s ease-in-out;
+    }
+
+    .section-layout{
+      width: 100%;
+      min-height: 650px;
+      background: url(/resources/images/home/bg.jpg);
+      background-size: 100% 100%;
+    }
+
+    .section-footer{
+      width: 100%;
+      min-height: 300px;
+      margin-top: 50px;
+      background: url("/resources/images/home/bg7.jpg");
+      background-size: 100% 100%;
+    }
+    .opacity{
+      opacity: 0.07;
+      font-size: 100px;
+      font-weight: 900;
+    }
+    .scr{
+      --bs-scroll-height: 150px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="initial__loading"></div>
+  </div>
+</body>
+
+</html>

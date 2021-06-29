@@ -1,0 +1,161 @@
+
+
+/* estate plus home top section*/
+.ep-home-top {
+  overflow: hidden;
+  width:100%;
+  height:100vh;
+  text-align:center;
+  color:#fff;
+}
+.ep-home-text{
+  color:#fff;
+}
+
+.ep-home-top-first {
+  width:100%;
+  height:100%;
+  text-align:center;
+  background-size: 100% 100%;
+  /* background-attachment: fixed; */
+  /* position: relative; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-animation: zoomin 15s ease-in infinite;
+  animation: zoomin 15s ease-in infinite;
+  transition: all .10s ease-in-out;
+  overflow: hidden;
+}
+
+/* The innermost element*/
+.ep-home-top-second {
+  width:100%;
+  height:100%;
+  text-align:center;
+  background: none;
+  -webkit-animation: zoomout 15s ease-in infinite;
+  animation: zoomout 15s ease-in infinite;
+  transition: all .10s ease-in-out;
+  overflow: hidden;
+}
+
+/* buttons */
+.ep-home-top-btn{
+  float:right;
+}
+
+
+/* Zoom in Keyframes */
+@-webkit-keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+}
+@keyframes zoomin {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+} /*End of Zoom in Keyframes */
+
+/* Zoom out Keyframes */
+@-webkit-keyframes zoomout {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.67);}
+  100% {transform: scale(1);}
+}
+@keyframes zoomout {
+    0% {transform: scale(1);}
+  50% {transform: scale(0.67);}
+  100% {transform: scale(1);}
+}/*End of Zoom out Keyframes */
+
+
+
+
+
+
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: rgba(117, 114, 114, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.btn.hoverBtnRed{
+  color: white;
+  background-color:#900;
+}
+.btn.hoverBtnBgNone{
+  color: rgb(41, 184, 228);
+}
+.btn.hoverBtnBlue{
+  color: white;
+  background-color:#04304d;
+}
+.hoverBtnRed:hover{
+  color: #900;
+  background-color: white;
+}
+
+.hoverBtnBlue:hover{
+  color: #04304D;
+  background-color: white;
+}
+
+.hoverBtnBgNone:hover{
+  color: #04304d
+}
